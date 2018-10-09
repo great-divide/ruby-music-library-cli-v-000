@@ -46,6 +46,7 @@ class Song
     @@all.select { |n| 
       if n.name == name 
         output = n
+      end
     }
     output
   end
