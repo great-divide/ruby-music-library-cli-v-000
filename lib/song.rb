@@ -43,6 +43,6 @@ class Song
   
   def self.find_by_name(name)
     array = @@all.select { |n| n.name == name }
-    array.each { |n| n }
+    array.each { |n| n.slice }
   end
 end
