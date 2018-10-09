@@ -42,7 +42,7 @@ class Song
   end
   
   def self.find_by_name(name)
-    array = @@all.select { |n| n.name == name }
-    array
+    @@all.select { |n| n.name == name }
+    
   end
 end
