@@ -43,7 +43,10 @@ class Song
   
   def self.find_by_name(name)
     output = nil
-    @@all.select { |n| n.name == name }
-    
+    @@all.select { |n| 
+      if n.name == name 
+        output = n
+    }
+    output
   end
 end
